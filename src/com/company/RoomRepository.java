@@ -2,7 +2,7 @@ package com.company;
 
 import java.sql.*;
 import java.util.ArrayList;
-
+//a class for operations about rooms
 public class RoomRepository {
     public static ArrayList<Room> getAll() throws SQLException {
         ArrayList<Room> rooms = new ArrayList<>();
@@ -25,7 +25,7 @@ public class RoomRepository {
         stmt.close();
         return rooms;
     }
-
+    //filter operation(not in use for now)
     public static Room getById(int roomId) throws SQLException {
         Room room = null;
         String sql = "SELECT * FROM room WHERE id=" + roomId;
@@ -46,7 +46,7 @@ public class RoomRepository {
         stmt.close();
         return room;
     }
-
+    //a method to update some data on database
     public static void updateRoomBookedStatus(int roomId, boolean status) throws SQLException {
         String SQL = "UPDATE room SET booked = ? WHERE id = ?";
         Connection connection = PostgreSQLJDBC.getConnection();

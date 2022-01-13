@@ -1,5 +1,5 @@
 package com.company;
-
+// a class to use data from database
 public class Room {
     private int id;
     private String type;

@@ -33,5 +33,6 @@ public class Frame extends JFrame {
     //TODO add operation to get rooms by filters
     //TODO add booking by time operation
     //TODO add receiving and giving money operation(user writes money amount then code calculates change and writes it)
+    //TODO pay with credit card operation
     //TODO improve gui
 }
